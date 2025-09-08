@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TODO List</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="main-container">
+            <h1>TODO LIST</h1>
+            <i>Introduce a continuación la importancia de la tarea, la descripción de la tarea y la fecha</i>
+            <div class="inputs">
+                <label for="criticidad">Criticidad</label>
+                <select id="criticidad">
+                    <option value="Alta" style="color: red">Alta</option>
+                    <option value="Media" style="color: blue">Media</option>
+                    <option value="Baja" style="color: green">Baja</option>
+                </select>
+            </div>
+            <div class="inputs">
+                <label for="descripcion">Descripción</label>
+                <input type="text" id="descripcion" placeholder="Descripción de la tarea"/>
+            </div>
+            <div class="inputs">
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha"/>
+            </div>
+            <button id="agregar-tarea">Añadir Tarea</button>
+            <div class="task-list" id="lista-tareas">
+                <div class="empty-state" id="estado-vacío">
+                    No hay tareas pendientes. ¡Añade tu primera tarea!
+                </div>
+            </div>
+        </div>
+    <script src="script.js"></script>
+    </body>
+</html>

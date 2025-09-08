@@ -1,0 +1,124 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.main-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+i {
+    display: block;
+    text-align: center;
+    margin-bottom: center;
+    color: #7f8c8d;
+}
+
+.inputs   {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #34495e;
+}
+
+select, input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.01);
+}
+
+.task-list {
+    margin-top: 30px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.task-criticidad {
+    margin-right: 15px;
+}
+
+/* Estilos para los checkboxes según criticidad */
+.criticidad-Alta {
+    accent-color: red;
+    width: 20px;
+    height: 20px;
+}
+
+.criticidad-Media {
+    accent-color: blue;
+    width: 20px;
+    height: 20px;
+}
+
+.criticidad-Baja {
+    accent-color: green;
+    width: 20px;
+    height: 20px;
+}
+
+.task-text {
+    flex-grow: 1;
+}
+
+.task-fecha {
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.empty-state {
+    text-align: center;
+    color: #7f8c8d;
+    padding: 30px 0;
+    font-style: italic;
+}
